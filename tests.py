@@ -64,6 +64,17 @@ class BackpackTest(unittest.TestCase):
         self.assertEqual(b.most_popular(), {'food': 3})
         self.assertEqual(b.get_counts(), {'stick': 1, 'Food': 1, 'food': 3})
 
+    def test_single_item_bag(self):
+        b = Backpack(size=1)
+        b.add('ax')
+        b.add('stick')
+        b.add('Food')
+        b.add('food')
+        b.add('food')
+        b.add('food')
+        self.assertEqual(b.most_popular(), {'food': 1})
+        self.assertEqual(b.get_counts(), {'food': 1})
+
 
 if __name__ == '__main__':
     unittest.main()
