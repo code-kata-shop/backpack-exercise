@@ -8,6 +8,12 @@ class BackpackTest(unittest.TestCase):
     def test_list_contents(self):
         self.assertEqual(Backpack().get_contents(), [])
 
+    def test_default_size(self):
+        self.assertEqual(Backpack().size, 10)
+        self.assertEqual(Backpack().get_contents(), [])
+        self.assertEqual(Backpack(size=5).size, 5)
+        self.assertEqual(Backpack().get_contents(), [])
+
     def test_add_item(self):
         b = Backpack()
         b.add('ax')
