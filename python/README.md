@@ -1,6 +1,11 @@
-# Run unit tests
 
-There are a set of tests. Make them pass to implement all these features.
+# Language Specific Comments
+
+Use whatever features you like baked into whatever version of Python you want. There shouldn't be a need to install any outside packages.
+
+## Run unit tests
+
+How to run tests
 
 ```
 % python tests.py              
