@@ -12,6 +12,6 @@ We're making a magical backpack. It has some simple features:
 
 ## Guidelines
 
-You may refactor the stubbed out code in `main` as you like, but you may not change the code in tests.py to match them. Treat it as an API contract that you must keep.
+You may refactor the stubbed out code in `main` as you like, but you may not change the code in test files to match them. Treat it as an API contract that you must keep.
 
 There are a set of tests for each language. Implement all these features, and they'll pass.
